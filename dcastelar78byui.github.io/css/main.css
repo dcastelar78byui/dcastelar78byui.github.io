@@ -72,3 +72,12 @@ a {
     color:  blue;
 
 }
+#portraitImage {
+    max-width: 100%;
+    height: auto;
+    float: right; 
+    margin-right: 1.5em;
+    margin-top: 2em;
+    margin-left: 1em;
+    border-radius: 50%;
+    }
