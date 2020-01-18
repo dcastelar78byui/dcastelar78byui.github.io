@@ -14,9 +14,10 @@ Header
     background-color:rgba(80, 110, 60, 0.9);
     color: white;    
     text-align: center;
-    padding: .55rem;
+    padding: .35rem;
     border-radius: 20px;
     font-family: 'Pacifico', cursive;
+    font-size: 1rem;
     letter-spacing: 2px; 
     margin: 1.5rem auto;
     max-width: 900px;
@@ -27,8 +28,10 @@ header {
         text-shadow: 2px 2px black;
 }
 p img {
-    float: right;
-    margin: 5px 5px 25px 5px;
+    float: center;
+    margin: 1px 1px 1px 1px;
+    width:100px;
+    height: 100px;
     
     
 }
@@ -56,6 +59,7 @@ main {
 
 h2 {
     text-align: left;
+    font-size: 1rem;
 }
 footer {
     text-shadow: 1px 1px black;

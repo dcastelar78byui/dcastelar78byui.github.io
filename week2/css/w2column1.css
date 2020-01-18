@@ -1,0 +1,14 @@
+@media screen and (max-width: 590px) {
+   
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    header, footer {
+        font-size: .75em;
+        height: 50 px;
+    }
+    }
+    
+
+   
