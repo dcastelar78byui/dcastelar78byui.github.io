@@ -8,6 +8,10 @@ h2 {
     
 }
 
+nav ul{
+    flex-flow: wrap;
+    justify-content: space-around;
+}
 
 
 footer {
