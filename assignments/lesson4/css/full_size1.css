@@ -1,0 +1,42 @@
+@media only screen and (min-width: 60em)
+{
+
+
+h2 {
+    
+    font-size: 4em;
+    
+}
+
+nav ul{
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+
+footer {
+  
+    font-size: 3em;
+}
+
+.summaryBox {
+       font-size: 40px;
+
+}
+
+.forescastBox {
+
+    font-size: 40px;
+}
+
+.articleBox {
+    
+    font-size: 40px;
+}
+
+.contactBox {
+  
+    font-size: 40px;
+}
+
+}
