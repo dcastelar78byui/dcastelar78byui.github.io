@@ -1,0 +1,45 @@
+@media only screen and (min-width: 37.5em)
+{
+ 
+
+h2 {
+     font-size: 3em;
+     
+}
+
+
+
+
+nav ul li {
+    font-size: 2em;
+   
+}
+
+footer {
+    font-size: 2em;
+}
+
+
+.summaryBox {
+    font-size: 30px;
+
+}
+
+.forescastBox {
+       font-size: 30px;
+}
+
+.articleBox {
+    
+    font-size: 30px;
+}
+
+.contactBox {
+    
+    font-size: 30px;
+}
+
+.weathersummary {
+    font-size: 1rem;
+}
+}
