@@ -1,0 +1,70 @@
+@media only screen and (min-width: 500px)
+{
+ 
+
+h2 {
+     font-size: 2.2em;     
+}
+
+.weather-summary {
+    
+    top: 380px;
+  }
+
+footer {
+    font-size: 1.2em;
+}
+
+
+.summaryBox {
+    font-size: 30px;
+
+}
+
+.forescastBox {
+       font-size: 30px;
+}
+
+.articleBox {
+    
+    font-size: 30px;
+}
+
+.contactBox {
+    
+    font-size: 30px;
+}
+.weathersummary span {
+    
+    font-size: 1.1rem;
+  
+  }
+.weathersummary p {
+    
+    font-size: 1.1rem;
+   
+  }
+.weathersummary h3{ font-size: 1.5rem;}
+  
+
+
+  /* Gallery */
+
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  
+}
+#logo {
+  width: 250px;
+}
+
+}
+
+
+
+
+
+
