@@ -1,0 +1,61 @@
+<main>
+    <h2>Storm Center</h2>
+    <section>
+        <form method="GET" action="thanks.html">
+           
+            <fieldset>
+                <legend>Personal information</legend>
+                <label class="titulo">Full Name (requiered) <input type="text" name="name" pattern="[A-Za-z]{5,}" required></label>
+                <label class="titulo">Email Address <input type="email" name="email" placeholder="demo@gmail.com"></label>
+                <label class="titulo">Phone Number (requiered) <input type="tel" name="telephone" required></label>
+                <label class="titulo">Zip Code (requiered) <input type="number" name="zipcode" required ></label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Storm Info</legend>
+                <label class="titulo">Storm Date <input type="date" name="stormDate" class="app"></label>
+                
+                <label class="titulo">Storm Type 
+                    <input list="stormtype" name="stormtype" placeholder="Choose Storm Type">
+                    
+                    <datalist id="stormtype">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+
+                </label>
+                
+                <label class="titulo">Storm Severity: <output id="strmOutSev" name="strmoutSev">5</output>
+                    <input type="range" id="strmInSev" name="strminSev" min="1" max="10" value="5" oninput="strmOutSev.value = strmInSev.value">
+                </label>
+                
+                <label class="titulo">Storm Region
+                    <select name="stormRegion" class="app">
+                        <option disabled selected>Select Region  &#9660;</option>
+                        <option>Preston</option>
+                        <option>Soda Springs</option>
+                        <option>Fish Haven</option>
+                    </select>
+                </label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Other</legend>
+                <div>User in Danger? </div>
+                <label class="sbs"><input type="radio" name="peligro" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="peligro" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="peligro" value="no"> No</label>
+
+                <label class="titulo">Aditional Information or Comments <textarea></textarea></label>
+            </fieldset>
+
+            <div class="textCenter">
+                <input type="submit" name="submit" class="submitBtn" value="SEND FORM">
+            </div>
+
+        </form>
