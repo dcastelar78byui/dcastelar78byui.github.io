@@ -1,3 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fisopre Weather</title>
+        <script type="text/javascript" src="./js/toggleMenu.js"></script>
+        <meta name="description" content="W03 Assignment: Website Planning Document by Diego Scarpa CIT 230 BYU-I.">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/full_size.css">
+        <link rel="shortcut icon" href="favicon.ico">
+
+    </head>
+    
+    <body data-gr-c-s-loaded="true"><header>
+        <img id="logo" src="images/fisopre1small.jpg" alt="Fisopre Weather">
+          
+      </header>
+    
+      <nav>
+        <nav class="clearfix">
+          <button onclick="toggleMenu()">&#9776</button>
+          <ul id="navigation" class="hide">
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="preston-6.html">Preston</a></li>
+            <li><a href="soda.html">Soda Springs</a></li>
+            <li><a href="fish.html">Fish Haven</a></li>
+            <li class="active"><a href="storm.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            
+          </ul>
+        </nav>
+      </nav>
+    </br>
+
 <main>
     <h2>Storm Center</h2>
     <section>
@@ -5,33 +43,34 @@
            
             <fieldset>
                 <legend>Personal information</legend>
-                <label class="titulo">Full Name (requiered) <input type="text" name="name" pattern="[A-Za-z]{5,}" required></label>
-                <label class="titulo">Email Address <input type="email" name="email" placeholder="demo@gmail.com"></label>
-                <label class="titulo">Phone Number (requiered) <input type="tel" name="telephone" required></label>
-                <label class="titulo">Zip Code (requiered) <input type="number" name="zipcode" required ></label>
+                <label class="titulo">Full Name (requiered) <input type="text" name="name" pattern="[A-Za-z]{5,}" required></label> </br>
+                <label class="titulo">Email Address <input type="email" name="email" placeholder="demo@gmail.com"></label></br>
+                <label class="titulo">Phone Number (requiered) <input type="tel" name="telephone" required></label></br>
+                <label class="titulo">Zip Code (requiered) <input type="number" name="zipcode" required ></label></br>
             </fieldset>
 
 
             <fieldset>
                 <legend>Storm Info</legend>
-                <label class="titulo">Storm Date <input type="date" name="stormDate" class="app"></label>
+                <label class="titulo">Storm Date <input type="date" name="stormDate" class="app"></label></br>
                 
                 <label class="titulo">Storm Type 
                     <input list="stormtype" name="stormtype" placeholder="Choose Storm Type">
                     
                     <datalist id="stormtype">
-                        <option value="Flash Flood"></option>
-                        <option value="Hail"></option>
-                        <option value="Hurricane"></option>
-                        <option value="Thunderstorm"></option>
-                        <option value="Tornado"></option>
+                        <option value="Flash Flood"></option></br>
+                        <option value="Hail"></option></br>
+                        <option value="Hurricane"></option></br>
+                        <option value="Thunderstorm"></option></br>
+                        <option value="Tornado"></option></br>
                     </datalist>
 
                 </label>
+            </br>
                 
                 <label class="titulo">Storm Severity: <output id="strmOutSev" name="strmoutSev">5</output>
                     <input type="range" id="strmInSev" name="strminSev" min="1" max="10" value="5" oninput="strmOutSev.value = strmInSev.value">
-                </label>
+                </label></br>
                 
                 <label class="titulo">Storm Region
                     <select name="stormRegion" class="app">
@@ -40,18 +79,18 @@
                         <option>Soda Springs</option>
                         <option>Fish Haven</option>
                     </select>
-                </label>
+                </label></br>
             </fieldset>
 
 
             <fieldset>
                 <legend>Other</legend>
                 <div>User in Danger? </div>
-                <label class="sbs"><input type="radio" name="peligro" value="yes"> Yes</label>
-                <label class="sbs"><input type="radio" name="peligro" value="maybe"> Maybe</label>
-                <label class="sbs"><input type="radio" name="peligro" value="no"> No</label>
+                <label class="extra"><input type="radio" name="peligro" value="yes"> Yes</label></br>
+                <label class="extra"><input type="radio" name="peligro" value="maybe"> Maybe</label></br>
+                <label class="extra"><input type="radio" name="peligro" value="no"> No</label></br>
 
-                <label class="titulo">Aditional Information or Comments <textarea></textarea></label>
+                <label class="titulo">Aditional Information or Comments <textarea></textarea></label></br>
             </fieldset>
 
             <div class="textCenter">
@@ -59,3 +98,21 @@
             </div>
 
         </form>
+
+    </main>
+</br>
+    <footer>
+        <h4>
+           <span>&copy; </span>       
+           <span> FISOPRE by Diego Scarpa</span>
+           <br>
+           <span id="currentdate"></span>
+           </h4>
+   </footer>
+   <script src="./js/currentDate.js"></script>
+   <script src="./js/windchill.js"></script>
+   <script src="./js/toggleMenu.js"></script>
+  </body>
+</html>
+
+      
