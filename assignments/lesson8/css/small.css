@@ -274,7 +274,6 @@ label {
 }
 
 input, textarea {
-    margin-bottom: 20px;
     width: 90%;
     padding: 10px;
     border: 1px solid gray;
@@ -290,6 +289,12 @@ input:focus, textarea:focus {
     border: 5px solid black;  /*agrego color al border en donde selecciono con el mouse*/
 }
 
+input[type="submit"]:hover{
+    background-color: #4a88fa;
+    cursor: pointer;
+
+}
+
 .submitBtn {
     display: block;
     font-size: 20px;
@@ -301,5 +306,15 @@ input:focus, textarea:focus {
     width: 40%;
     margin-left: 20%;
     padding: 10px;
-        
+    border: none;    
+}
+
+.extra1 {
+    display: inline-flex ;
+flex-direction: column ;
+flex-wrap: wrap ;
+justify-content: space-between ;
+align-items: center ;
+align-content: center ;
+margin-top: 10px;
 }

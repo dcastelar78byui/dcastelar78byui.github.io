@@ -40,7 +40,7 @@
     <h2>Storm Center</h2>
     <section>
         <form method="GET" action="thanks.html">
-           
+            
             <fieldset>
                 <legend>Personal information</legend>
                 <label class="titulo">Full Name (requiered) <input type="text" name="name" pattern="[A-Za-z]{5,}" required></label> </br>
@@ -55,8 +55,7 @@
                 <label class="titulo">Storm Date <input type="date" name="stormDate" class="app"></label></br>
                 
                 <label class="titulo">Storm Type 
-                    <input list="stormtype" name="stormtype" placeholder="Choose Storm Type">
-                    
+                    <input list="stormtype" name="stormtype" placeholder="Choose Storm Type">             
                     <datalist id="stormtype">
                         <option value="Flash Flood"></option></br>
                         <option value="Hail"></option></br>
@@ -65,6 +64,7 @@
                         <option value="Tornado"></option></br>
                     </datalist>
 
+                    
                 </label>
             </br>
                 
@@ -86,10 +86,14 @@
             <fieldset>
                 <legend>Other</legend>
                 <div>User in Danger? </div>
-                <label class="extra"><input type="radio" name="peligro" value="yes"> Yes</label></br>
-                <label class="extra"><input type="radio" name="peligro" value="maybe"> Maybe</label></br>
-                <label class="extra"><input type="radio" name="peligro" value="no"> No</label></br>
-
+              
+                <label class="extra1"><input type="radio" name="peligro" value="yes"> Yes</label></br>
+           
+                <label class="extra1"><input type="radio" name="peligro" value="maybe"> Maybe</label></br>
+           
+                <label class="extra1"><input type="radio" name="peligro" value="no"> No</label></br>
+          
+            </br>
                 <label class="titulo">Aditional Information or Comments <textarea></textarea></label></br>
             </fieldset>
 
