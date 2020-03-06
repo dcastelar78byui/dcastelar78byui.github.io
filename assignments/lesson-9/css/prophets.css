@@ -23,43 +23,45 @@ div {
     grid-template-columns: 1fr;
     grid-gap:.25rem;
     box-shadow: 0 0 20px black;
-    padding: 1rem;
     background-color: #DDDDDD;
-    
-    
+    padding: 1rem;    
 }
+
+
 img {
     width:200px;
     height:280px;
     box-shadow: 0 0 10px black;
     margin-bottom: 10px;
-   
-
 }
+
+
 footer {
     margin:16px;
     text-align:left;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
+
+
 p {
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'Roboto', sans-serif;    
 }
 
 
 
 @media only screen and (min-width:550px) {
-    div {
-    
+    div {    
     grid-template-columns: 1fr 1fr;
-}
+        }
 }
 
 
 @media only screen and (min-width: 850px) {
     div {
         grid-template-columns: 1fr 1fr 1fr;
-    }
+        }
 }
+
+/* Source: Heather Stratton
 
