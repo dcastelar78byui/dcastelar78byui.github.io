@@ -291,7 +291,7 @@ input:focus, textarea:focus {
 
 input[type="submit"]:hover{
     background-color: #4a88fa;
-    cursor: pointer;
+    cursor: pointer;  /*el cursor cambia al pasar por boton*/
 
 }
 
