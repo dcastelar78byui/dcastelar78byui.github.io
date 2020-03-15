@@ -1,3 +1,5 @@
+    
+    function forecast (){
     const apiUrl1= 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=21e36e86016678aa6f98437527607b95';
     fetch (apiUrl1)
     .then((Response)=>Response.json())
@@ -44,4 +46,4 @@
     }
     )
 
-;
+    };

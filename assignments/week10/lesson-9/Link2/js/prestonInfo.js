@@ -1,3 +1,5 @@
+function cuadro() {
+
 const apiUrl= 'http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=21e36e86016678aa6f98437527607b95';
 fetch (apiUrl)
 .then((Response)=>Response.json())
@@ -11,4 +13,4 @@ fetch (apiUrl)
     document.getElementById('humidity').textContent=infoPreston.main.humidity;
 
 }
-);
+)};
