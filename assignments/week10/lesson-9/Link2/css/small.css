@@ -1,0 +1,373 @@
+header {
+    background-color: #5BFF00;
+}
+  
+
+
+h2 {
+    text-align: center;
+    background-color: white;
+    color: mediumblue;    
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-style: oblique;
+}
+ 
+/*Navegacion*/
+
+nav button {   /* convierte en boton un transparente y lo agranda 
+                para que pueda ser usado con el dedo */
+    margin: .4rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color:white;
+}
+
+
+nav {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;  
+    text-align: center;
+    }
+
+nav ul {   /* le saca los punto y el margen*/
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav ul li a {
+    display: block; /* area para que sea clickeable*/
+    padding: .8rem 20%; /*areas mas grandes para que el dedo */
+    text-decoration: none;  /* le saca el subrayado */
+    color: white;  /*las letras en negro*/
+    border: 1px solid rgb(255, 255, 255);
+}
+
+nav ul li.active {
+    background-color: rgba(255,255,255, .2); /*quede marcado en el menu*/
+}
+
+nav ul li a:hover {
+    background-color:rgba(255,255,255, .3) /*cuando pasa el mouse*/
+}
+
+
+nav ul.hide {
+    display: none;
+}
+
+
+/* Source: Christopher Cowan */
+
+.contentbox {
+    display: block;
+    margin: 10px auto;
+    padding: 2%;
+    color: white;
+    /*font-size: 3.3rem;*/   
+}
+
+#herodiv_container {
+    position: relative;
+    }
+
+.contentbox_img {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#hero_img {
+    max-width: 100%;
+   }
+
+.weathersummary {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    background-color:black;
+    padding: 3% 7%;
+    /*font-size: 0.9rem;*/
+    opacity: 0.9;
+    /*font-size: 0.7rem;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+  .forescastBox {
+    display: block;
+    margin: 15px auto;
+    border: 3px dashed black;
+    padding: 15px;
+    background: #5BFF00;
+    font-style: oblique;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+
+
+.articleBox {
+    display: block;
+    margin: 15px auto;
+    border: 3px dashed black;
+    padding: 15px;
+    background: #5BFF00;
+    font-style: oblique;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.contactBox {
+    display: block;
+    margin: 15px auto;
+    border: 3px dashed black;
+    padding: 15px;
+    background: #5BFF00;
+    font-style: oblique;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #090e13;
+    Color: White;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.prestonPhoto img {width: 100%;}
+
+#article_img {
+    max-width: 95%;
+}
+
+/* nuevo*/
+.weathersummary h3 {
+    grid-row: 1;
+    grid-column: 1/3;}
+
+.weathersummary span {
+    text-align:right;
+    color:  white;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+.weathersummary p {
+    text-align:right;
+    color:  white;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  #current {
+      grid-row: 2;
+      grid-column: 1;
+      }
+ #temp {
+    grid-row: 3;
+    grid-column: 1;
+    }
+#winds{
+        grid-row: 4;
+        grid-column: 1;
+        }
+#hum  {
+       grid-row: 5;
+       grid-column: 1;
+       }
+
+  #currently {
+    grid-row:2;
+    grid-column: 2;
+    
+  }
+  #temperature {
+    grid-row:3;
+    grid-column: 2;
+  }
+  #windspeed {
+    grid-row:4;
+    grid-column:2;
+  
+  }
+  #humidity {
+    grid-row:5;
+    grid-column:2;
+  
+  }
+  #windc {
+    grid-row:6;
+    grid-column:1;
+  
+  }
+  #windchill {
+    grid-row:6;
+    grid-column:2;
+  }
+
+  /* Gallery */
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  
+}
+
+picture img[data-src] {
+    filter: blur(0em);
+    margin: 0;
+    padding: 0;
+    width: 95%;
+}
+
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+.textoCaja {
+    background: red;
+    color: rgb(255, 255, 255);
+    width: 95%;
+    display: inline-flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+.cajasFotos img {
+    margin-left: 0;
+    padding-left: 0;
+
+}fieldset {
+    width: 60%;
+    border: 5px solid #ccc;
+    margin: 20px;
+    padding: 20px;    
+       
+}
+
+
+#logo {
+    width: 150px;
+}
+
+legend {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    color: blue;
+
+}
+.titulo {
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    display: block;
+    width: 100%;
+
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+textarea {
+    resize: vertical; /* se agrande el cuadro solo verticalmente */
+    min-height: 150px;
+    max-height: 300px; /*le fijamos el maximo de agrende*/
+}
+
+input:focus, textarea:focus {
+    border: 5px solid black;  /*agrego color al border en donde selecciono con el mouse*/
+}
+
+input[type="submit"]:hover{
+    background-color: #4a88fa;
+    cursor: pointer;  /*el cursor cambia al pasar por boton*/
+
+}
+
+.submitBtn {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: #1668c4;
+    color: honeydew;
+    font-family: 'Roboto', sans-serif;
+    width: 40%;
+    margin-left: 20%;
+    padding: 10px;
+    border: none;    
+}
+
+.extra1 {
+    display: inline-flex ;
+    flex-direction: column ;
+    flex-wrap: wrap ;
+    justify-content: space-between ;
+    align-items: center ;
+    align-content: center ;
+    margin-top: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    background-color:#f9a2a2;
+    max-width: 95%;
+    border-color: black;
+    border-width: medium;
+    padding-bottom: 20px;
+}
+
+.boxclima {
+    background-color: wheat;
+}
+
+.forecastCuadro {
+    background-color: wheat;
+}
+
+.clima {
+    background-color: white;
+}
+
+.boxclima {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: skyblue;
+    padding: 15px;
+    text-align: center;
+    border: solid 3px black;
+}
+
+#textfinal {
+    color: black;
+}
+.contentbox {
+    
+    text-align: center;    
+}

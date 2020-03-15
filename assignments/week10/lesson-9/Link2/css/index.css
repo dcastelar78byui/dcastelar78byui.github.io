@@ -1,0 +1,16 @@
+section {
+    background-color:#B9B9CC;
+    border:1px solid #60629F;
+    text-align:center;
+    padding-bottom: 30px;
+}
+
+section:hover {
+    background-color:rgb(129, 129, 160);
+}
+
+img {
+    width: 250px;
+}
+
+
