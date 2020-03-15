@@ -10,4 +10,5 @@ fetch (apiUrl)
     document.getElementById('windspeed').textContent=infoPreston.wind.speed;
     document.getElementById('humidity').textContent=infoPreston.main.humidity;
 
-});
+}
+);
