@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fisopre Weather</title>
+        <script type="text/javascript" src="./js/toggleMenu.js"></script>
+        <meta name="description" content="W11 Assignment: WeatherSite by Diego Scarpa CIT 230 BYU-I.">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/full_size.css">
+        <link rel="shortcut icon" href="favicon.ico">
+
+    </head>
+    
+    <body data-gr-c-s-loaded="true"><header>
+        <img id="logo" src="images/fisopre1small.jpg" alt="Fisopre Weather">
+          
+      </header>
+    
+      <nav>
+        <nav class="clearfix">
+          <button onclick="toggleMenu()">&#9776</button>
+          <ul id="navigation" class="hide">
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li class="active"><a href="soda.html">Soda Springs</a></li>
+            <li><a href="fish.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+      </nav>
+      </nav>
+    
+
+    
+
+    <main>
+        <h2 class="city">Soda Springs, Idaho</h2>
+        <div id="herodiv_container" class="contentbox">
+                <picture class="prestonPhoto">
+                  <source media="(max-width: 500px)" srcset="images/soda-springs-geyserpeque.jpg">
+                  <source media="(max-width: 900px)" srcset="images/soda-springs-geysermediano.jpg">
+                  <img src="images/soda-springs-geyserGrande.jpg" alt="Preston Valley">
+                </picture>           
+                        
+          <section class="weathersummary">
+            <h3> Weather Summary </h3>
+            <p id="current"> Currently: </p> 
+            <div><span id="currently">Cloudy</span></div>
+            
+            <p id="temp">Temperature: </p> 
+            <div><span id="temperature"></span>&#176 F</div>
+            
+            <p id="winds">Wind Speed: </p>             
+            <div><span id="windspeed">N/A</span> mph</div>
+           
+            <p id="hum">Humidity: </p> 
+            <div><span id="humidity"> </span> &#37 </div>
+
+            <p id="windc">Wind Chill: </p>             
+            <div> <span id="windchill"> N/A</span></div>
+
+          </section>
+
+        </div>
+        
+        <section class="forecastCuadro">
+          <h2>5-Day Forecast</h2>
+            <div class="boxclima">
+                        
+            </div> 
+          
+        </section>
+      
+
+        <div id="article_container" class="contentbox">
+            <h2>Windy snowstorm expected to make roads dangerous</h2>
+            <img id="article_img" src="images/preston_news.png" alt="Windy snowstorm">
+            <p id="textfinal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At reprehenderit ratione illo eius numquam animi saepe quisquam atque fuga velit. Commodi, 
+              ullam. Accusantium voluptas accusamus pariatur ratione rerum eos maiores?</br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laudantium nemo 
+            esse repudiandae consequuntur eligendi quidem iste sequi saepe porro! Reiciendis 
+            eius saepe magni et totam repudiandae dolores illo voluptatem.</p>
+          </div> 
+
+         
+
+        <div class="contactBox">Contact Information</div>
+        <section class="mapa">
+            <div>
+              <p id="contacttxt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At reprehenderit ratione illo eius numquam animi saepe quisquam atque fuga velit. Commodi, 
+                ullam. Accusantium voluptas accusamus pariatur ratione rerum eos maiores?</p> </div>
+                 
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5920.655343886905!2d-111.8718897220687!3d42.10045263634726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7efb1c4d9f7%3A0xaf288606bb1fd764!2sCedarwood%20Apartments!5e0!3m2!1sen!2sar!4v1581223285281!5m2!1sen!2sar" width="300" height="225" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            </section>
+
+    </main>
+
+    <footer>
+        <h4>
+           <span>&copy; </span>       
+           <span> FISOPRE by Diego Scarpa</span>
+           <br>
+           <a href="https://openweathermap.org/" target="_blank"> OpenWeatherMap </a></p>
+           <span id="currentdate"></span>
+           </h4>
+   </footer>
+   <script src="./js/currentDate.js"></script>
+   <script src="./js/windchill.js"></script>
+   <script src="./js/toggleMenu.js"></script>
+   <script src="./js/sodainfo.js"></script>
+   <script src="./js/climaBox.js"></script>
+  </body>
+</html>
+
+   

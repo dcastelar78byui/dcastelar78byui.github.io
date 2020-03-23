@@ -1,0 +1,103 @@
+@media only screen and (min-width: 900px)
+{
+
+
+h2 {
+    
+    font-size: 3em;
+    
+}
+
+
+
+nav button {
+    display: none;  /*saco el boton de menu*/
+        }
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    border: none; /*desaparece el borde */
+    border-right: 1px solid rgba(0, 0, 0, 0.3); /*bordes a los costados*/
+    padding: .8rem 1rem; /* espacio alrededor del texto*/
+}
+
+nav ul.hide {
+    display: block;   /*fuerzo el display*/
+}
+
+
+footer {
+  
+    font-size: 1.2em;
+}
+
+.weather-summary {
+    
+    top: 420px;
+    font-size: 1.2rem;
+    }
+
+.prestonhero {
+    max-width: 240%;
+    margin-bottom: 5px;
+    
+  }
+
+.summaryBox {
+       font-size: 40px;
+
+}
+
+.forescastBox {
+
+    font-size: 40px;
+}
+
+.articleBox {
+    
+    font-size: 40px;
+}
+
+.contactBox {
+  
+    font-size: 40px;
+}
+
+.weathersummary span {
+    
+    font-size: 1.4rem;
+  
+  }
+.weathersummary p {
+    
+    font-size: 1.4rem;
+   
+  }
+.weathersummary h3{ font-size: 2rem;}
+  
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+        
+}
+
+#logo {
+    width: 250px;
+}
+
+.cajaFotos:hover {
+    box-shadow: 0 0 50px #333;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+

@@ -1,0 +1,93 @@
+@media only screen and (min-width: 500px)
+{
+ 
+
+h2 {
+     font-size: 2.2em;     
+}
+
+.weather-summary {
+    
+    top: 380px;
+  }
+
+footer {
+    font-size: 1.2em;
+}
+
+
+.summaryBox {
+    font-size: 30px;
+
+}
+
+.forescastBox {
+       font-size: 30px;
+}
+
+.articleBox {
+    
+    font-size: 30px;
+}
+
+.contactBox {
+    
+    font-size: 30px;
+}
+.weathersummary span {
+    
+    font-size: 1.1rem;
+  
+  }
+.weathersummary p {    
+    font-size: 15px;   
+  }
+
+.weathersummary h3{ 
+  font-size: 22px;
+  padding-left: 10px;
+  padding-right: 10px;}
+  
+
+
+  /* Gallery */
+
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  
+}
+#logo {
+  width: 200px;
+}
+
+
+
+.boxclima h4,p{
+  font-size: 25px ;
+
+}
+
+.boxclima img {
+  width: 80px; height: 80px
+}
+
+.weathersummary h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+    
+}
+
+.weathersummary {
+  padding: 10px;
+}
+
+
+
+
+
+}
