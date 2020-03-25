@@ -99,5 +99,9 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     }
 
+ #footerfinal1 {
+        width: 101%;
+    }
+
 }
 

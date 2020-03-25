@@ -1,19 +1,17 @@
-function calculationWindChill(){
+/*Establish variables to get temperature and wind speed from HTML document*/
+let t = document.getElementById('temperature').innerHTML;
+let s = document.getElementById('windspeed').innerHTML;
 
-    var temp =  parseFloat(document.getElementById("Enter temperature (°F").textContent);
-    var windS =  parseFloat(document.getElementById("Enter Wind Velocity (mph)").textContent);
-    var windInfo = 'N/A';
-    var t=0;
-    var s=35.75;
-    var aux=0;
-    var potencia=windS**0.16;
-
-    if ((temp <= 50) && (windS>=3.0)) {
-        t=0.6215*temp;
-        aux= 0.4275*temp;
-        
-        windInfo = 35.74 + t - (s*potencia) + (aux * potencia);
-        Math.round(windInfo);
-    }
-    document.getElementById("windchill").textContent = windInfo;
+/*Establish temperature requirement of equal to or less than 50 degrees and wind speed equal to or greater than 3 mph to calculate wind chill factor*/
+if ((t <= 50) && (s >= 3)) {
+  /*Establish variable "f" to hold value of wind chill calculation using "t" and "s" values*/
+  let f = (35.74 + 0.6215*t) - (35.75*Math.pow(s,0.16)) + 0.4275*t*(Math.pow(s,0.16));
+  
+  /*If "t" and "s" requirements are met, display "f" wind chill factor calculation to span id "windChill", rounded to integer.*/
+  document.getElementById('windChill').innerHTML = Math.round(f);
 }
+
+/*If "t" and "s" requirements are NOT met, display "N/A" to span id "windChill"*/
+else {
+  document.getElementById('windchill').innerHTML = 'N/A';
+};

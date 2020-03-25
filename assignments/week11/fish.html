@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/full_size.css">
+        <link rel="stylesheet" href="css/footercss.css">
         <link rel="shortcut icon" href="favicon.ico">
 
     </head>
@@ -61,7 +62,7 @@
             <div><span id="humidity"> </span> &#37 </div>
 
             <p id="windc">Wind Chill: </p>             
-            <div> <span id="windchill"> N/A</span></div>
+            <div> <span id="windchill"></span>&#176 F</div>
 
           </section>
 
@@ -85,6 +86,7 @@
             eius saepe magni et totam repudiandae dolores illo voluptatem.</p>
           </div> 
          
+          <div class="events"> <h3>Events</h3></div> 
 
         <div class="contactBox">Contact Information</div>
         <section class="mapa">
@@ -92,27 +94,62 @@
               <p id="contacttxt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At reprehenderit ratione illo eius numquam animi saepe quisquam atque fuga velit. Commodi, 
                 ullam. Accusantium voluptas accusamus pariatur ratione rerum eos maiores?</p> </div>
                  
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5920.655343886905!2d-111.8718897220687!3d42.10045263634726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7efb1c4d9f7%3A0xaf288606bb1fd764!2sCedarwood%20Apartments!5e0!3m2!1sen!2sar!4v1581223285281!5m2!1sen!2sar" width="300" height="225" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
+            
             </section>
 
     </main>
 
-    <footer>
-        <h4>
-           <span>&copy; </span>       
-           <span> FISOPRE by Diego Scarpa</span>
-           <br>
-           <a href="https://openweathermap.org/" target="_blank"> OpenWeatherMap </a></p>
-           <span id="currentdate"></span>
-           </h4>
-   </footer>
+    <footer id="footerFinal">
+      <div class="wrap">
+          <div class="cajaFooter">
+              <ul id="navigation" class="hide">
+                  <li><a href="index.html"> Home</a></li>
+                  <li><a href="preston-10.html">Preston</a></li>
+                  <li><a href="soda.html">Soda Springs</a></li>
+                  <li><a href="fish.html">Fish Haven</a></li>
+                  <li><a href="stormcenter.html">Storm Center</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+              </ul>
+          </div>
+          <div id="dire"><h5>Fisopre Weather</h5>
+              <h6>Main Street 123</h6>
+              <h6>Preston, Idaho</h6>
+          
+          </div>
+          <div class="cajaFooter">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.5719741330477!2d-111.87339078526703!3d42.095219479205554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e849ab1cf3%3A0xbd0c1aedf30d1b12!2s2-98%20S%202nd%20E%20St%2C%20Preston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sar!4v1584982529591!5m2!1sen!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+  
+         
+          <div id="browser"> 
+              <a href="https://www.facebook.com/"><img src="./images/facebook_icon-icons.com_53612.png" alt="" srcset=""> </a>
+              <a href="https://www.instagram.com/"><img src="./images/instagram_icon-icons.com_53610.png" alt="" srcset=""> </a>
+              <a href="https://twitter.com/"><img src="./images/twitter_icon-icons.com_53611.png" alt="" srcset=""> </a>
+              <a href="https://www.pinterest.com/"><img src="./images/pinterest_icon-icons.com_53605.png" alt="" srcset=""> </a>
+          </div>
+          
+
+          
+  
+      </div>
+  
+      
+    </footer>
+    <div id="footerfinal1">
+      <h4>
+      <span>    &copy; </span>       
+      <span> FISOPRE by Diego Scarpa  </span>  
+      <a href="https://openweathermap.org/" target="_blank"> OpenWeatherMap </a> 
+      <span id="currentdate"></span>
+      </h4>
+    </br>
+  </div>
    <script src="./js/currentDate.js"></script>
    <script src="./js/windchill.js"></script>
    <script src="./js/toggleMenu.js"></script>
    <script src="./js/fishinfo.js"></script>
    <script src="./js/climaBox.js"></script>
+   <script src="./js/fishevents.js"></script>
   </body>
 </html>
 

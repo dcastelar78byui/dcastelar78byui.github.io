@@ -135,14 +135,16 @@ nav ul.hide {
     font-size: 20px;
 }
 
-footer {
-    background-color: #090e13;
+#footerfinal1 {
+    background-color: black;
     Color: White;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
+    /*display: flex;
+    flex-wrap: wrap;*/
+    width: 100%;
     font-size: 14px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .clearfix:after {
     content: "";
@@ -473,4 +475,27 @@ box-shadow: 11px 10px 12px #000000;
 #logo {
     margin-bottom: 0px;
     padding-bottom: 0px;
+}
+#footerfinal1 h4 {
+    margin: 0px;
+    width: 100%;
+}
+#footerfinal1 {
+    width: 103%;
+}
+h2.city {
+    color: black;
+}
+.events {
+    border: black 2px solid;
+    padding-left: 5px;
+}
+
+.events h3 {
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
 }
