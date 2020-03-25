@@ -497,3 +497,7 @@ h2.city {
     margin-bottom: 5px;
     text-align: left;
 }
+
+.cards h2 {
+    color: black;
+}
