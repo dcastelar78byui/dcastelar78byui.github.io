@@ -30,7 +30,7 @@ for (let i = 0; i<towns.length; i++ ) {
    foto.setAttribute('src',"images/"+towns[i].photo);
    foto.setAttribute('alt', "picture of: " + towns[i].name);
 
-  
+
 
    card.appendChild(h2);
    card.appendChild(h3);
