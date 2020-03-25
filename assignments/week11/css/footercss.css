@@ -91,6 +91,7 @@ h1,h2,h3,h4,h5 {
     #footerFinal .wrap >div {
         
         width: 20%;
+        max-width: 200px;
         
            
     }
