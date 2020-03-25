@@ -28,7 +28,7 @@ for (let i = 0; i<towns.length; i++ ) {
    population.textContent= 'Population: ' + towns[i].currentPopulation;
    rain.textContent= 'Annual Rainfall: ' + towns[i].averageRainfall;
    foto.setAttribute('src',"images/"+towns[i].photo);
-   foto.setAttribute('alt', "picture of: " + towns[i].name);
+   foto.setAttribute('alt', "picture of : " + towns[i].name);
 
 
 
