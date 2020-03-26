@@ -1,0 +1,99 @@
+/* Footer*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+#footer {
+    width: 100%;
+    height: auto;
+    background: black;
+    color: white;
+    overflow: hidden;
+}
+
+
+#footer .wrap > div{
+    float: left;
+    width: 100%;
+    height: 370px;
+    margin: 0px auto;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    transition: all 300ms;
+}
+
+footer h5{
+    display: block;
+    background: white;
+    height: 50px;
+    letter-spacing: 2px;
+    text-align: center ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#footer ul{
+    text-align: left;
+    margin: 20px;
+    font-size: 25px;
+    }
+
+#footer ul li {
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#footer ul li a{
+    display: block;
+    height: 40px;
+}
+
+#footer iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px gray;
+}
+
+#footer img {
+    margin-bottom: 15px;
+}
+
+#footer #browsers img{
+    width: 45px;
+}
+
+@media only screen and (min-width: 900px)
+{#footer .wrap > div{
+    width: 26%;
+    margin: 25px;
+    
+}
+
+#footer {       
+    height: 470px;
+    padding-bottom: 40px;
+}
+
+}

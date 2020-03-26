@@ -1,5 +1,5 @@
 
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const request = 'https://randomuser.me/api/';
  
 fetch(requestURL)
   .then(function (response) {
