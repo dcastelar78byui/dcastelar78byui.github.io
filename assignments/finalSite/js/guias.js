@@ -1,4 +1,4 @@
-const requestURL = 'https://dcastelar78byui.github.io/assignments/finalSite/personal.json';
+const requestURL ='https://dcastelar78byui.github.io/assignments/finalSite/personal.json';
  
 fetch(requestURL)
   .then(function (response) {
@@ -18,11 +18,10 @@ fetch(requestURL)
       let email1 = document.createElement('p');
       let image = document.createElement('img');
 
-
-
+      
         h2.textContent = riverguide1[i].name;   //h2//
-        image.setAttribute('src', riverguide[i].imageurl);      //img//
-        image.setAttribute('alt', riverguide[i].name);
+        image.setAttribute('src', riverguide1[i].imageurl);      //img//
+        image.setAttribute('alt', riverguide1[i].name);
         certification.textContent = "Certification Level: " + riverguide1[i].certification;  //p//
         year1.textContent = "Years of Experience: " + riverguide1[i].years;  //p//
         email1.textContent = "Email Address: " + riverguide1[i].email;  //p//
