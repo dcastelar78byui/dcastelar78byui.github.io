@@ -1,4 +1,4 @@
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const requestURL = 'https://github.com/dcastelar78byui/dcastelar78byui.github.io/blob/master/assignments/finalSite/personal.json';
  
 fetch(requestURL)
   .then(function (response) {
