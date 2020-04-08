@@ -1,0 +1,10 @@
+@media only screen and (min-width: 768px)
+{
+.title img {
+    width: 300px;
+}
+
+.formulario input{
+    margin-left: 25%;
+}
+}

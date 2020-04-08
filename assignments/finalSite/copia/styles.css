@@ -1,0 +1,698 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ 
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /*grid-template-rows: 100px auto 1fr 1fr 1fr 200px 400px;*/
+    grid-template-areas: 
+    "title title"
+    "header header"
+    "sidebar sidebar"
+    "secundario secundario"
+    "tercero tercero"
+    "footer footer"
+    "footerlocation footerlocation";
+}
+/* 100px auto 1fr 1fr 1fr 200px 400px; */
+
+.title{
+    grid-area: title;
+}
+.header{
+    grid-area: header;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.secundario {
+    grid-area: secundario;
+}
+
+.tercero {
+    grid-area: tercero;
+}
+.content{
+    grid-area: content;
+}
+.footer{
+    grid-area: footer;
+}
+
+.footerlocation {
+    grid-area: footerlocation;
+}
+
+/*
+.grid div:nth-child(even){
+    background-color: red;
+  }*/
+
+.grid .title{
+    background-color: #03a796;
+}
+.grid .wrap{
+    background-color: #05668d;
+}
+
+
+.slider{
+    width: 100%;
+    /*margin: auto;*/
+    overflow: hidden; /* lo que esta afuera desaparece*/
+    }
+
+.slider ul {
+    display: flex;
+    justify-content: space-around ;
+    align-items: center ;
+    align-content: center ;
+    padding: 0;
+    width: 400%; /*porque son 4 imagenes, si fueran 3 seria 300%*/
+    animation: cambio 20s infinite;
+}
+
+.slider li {
+    /*width: 100%;*/
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    max-height: 399px;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;   }
+    20% { margin-left: 0;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+}
+
+/* fin del hero */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+/* inicio del Nav */
+
+nav button {   /* convierte en boton un transparente y lo agranda 
+    para que pueda ser usado con el dedo */
+margin: 0.4rem;
+background-color: transparent;
+border: none;
+font-size: 1.6rem;
+color:white;
+}
+
+
+nav {
+background-color: black;
+font-family: 'Roboto', sans-serif;  
+text-align: center;
+}
+
+nav ul {   /* le saca los punto y el margen*/
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+
+nav ul li a {
+display: block; /* area para que sea clickeable*/
+padding: .8rem 20%; /*areas mas grandes para que el dedo */
+text-decoration: none;  /* le saca el subrayado */
+color: white;  /*las letras en negro*/
+border: 1px solid rgb(255, 255, 255);
+}
+
+nav ul li.active {
+background-color: rgba(255,255,255, .2); /*quede marcado en el menu*/
+}
+
+nav ul li a:hover {
+background-color:rgba(255,255,255, .3) /*cuando pasa el mouse*/
+}
+
+
+nav ul.hide {
+display: none;
+}
+
+/* final del nav */
+
+/* Footer*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+/*inicio Footer*/
+
+
+.footer {
+    width: 100%;
+    height: auto;
+    background: #02c39a;
+    color: white;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+.footer .wrap > div{
+    float: left;
+    width: 100%;
+    /*height: 370px;  2da etapa */
+    margin: 0px auto;
+    text-align: center;
+    color: white;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+}
+/*
+#menu_footer {
+    height: 180px;
+}*/
+
+.footer a{
+    text-decoration: none;
+    color: black;
+    transition: all 300ms;
+}
+
+footer h5{
+    display: block;
+    background: black;
+    height: 50px;
+    letter-spacing: 2px;
+    text-align: center ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#menu_footer h5{
+    color: black;
+    margin-top: 3px;
+    padding: 2px;
+    border-bottom: 1px solid black;
+    text-align: left;
+    margin: 5px;
+    font-size: 15px;
+    list-style-type: none;
+}
+
+.footer ul{
+    text-align: left;
+    margin: 5px;
+    font-size: 15px;
+    list-style-type: none;
+    
+    }
+
+.footer ul li {
+    margin-top: 5px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    
+}
+
+.footer ul li a{
+    display: block;
+    height: 15px;
+}
+
+.footerlocation #location {
+    display: flex ;
+flex-direction: column ;
+flex-wrap: wrap ;
+justify-content: space-around ;
+align-items: center ;
+align-content: space-around ;
+}
+
+    .footerlocation #location iframe {
+    width: 100%;
+    height: 250px;
+    margin-top:  10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.footer img {
+    margin-bottom: 15px;
+}
+
+.footer #browsers img{
+    width: 45px;
+}
+/*Fin de Footer*/
+.header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.title img{
+        width: 200px;
+        background-color: #03a796;
+          }
+
+#info img{
+    width: 300px;
+}
+
+
+#info #browsers img{
+    width: 50px;
+    text-align: center;
+    
+}
+#info #browsers{
+    display: flex ;
+    flex-direction: row ;
+    flex-wrap: wrap ;
+    justify-content: space-around ;
+    align-items: center ;
+    align-content: center ;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.footerlocation, #info {
+    background-color: #02c39a ;
+}
+
+
+/*inicio de activities*/
+
+
+.portafolio-item img{
+    width: 100%;
+    height: auto
+}
+
+.portafolio {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.portafolio h1 {
+    text-align: center;
+    font-size: 38px;
+    margin: 15px 0px 5px;
+}
+
+.portafolio-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portafolio-img {
+    transition: all 0.5s;   /*animar a imagen*/
+}
+
+
+.portafolio-item{
+    width: 100%;
+    position: relative;   /* para trabajar con absolute*/
+    overflow: hidden;   /*oculta el absolute que salga fuera*/
+}
+
+.portafolio-txt {
+    position: absolute;   /*para trabajar dentro del relative */
+    bottom: 0;
+    padding: 10px;
+    background: rgba(0,0,0,0.7); /*transparencia en el fondo del texto*/
+    color: white;
+    transform: translateY(90%);  /* se mueve de su lugar original*/
+    transition: all 0.5s ease-out;    /* demora animacion*/
+    /*padding-bottom: 0px;*/
+    height: 150px;
+    
+}
+
+.portafolio-txt p {
+    text-align: justify;
+}
+
+.portafolio-item:hover .portafolio-txt {   /* cuando el mouse pase por item actuara sobre el txt*/
+    transform: translateY(0%);
+}
+
+.portafolio-item:hover .portafolio-img {
+    transform: scale(1.3);
+}
+
+.portafolio-txt img {
+    /*height: 60px;*/
+    width: 230px;
+}
+
+/* Contact form Inicio */
+
+
+form{
+    background-color: white;
+    border-radius: 3px;
+    color: #999;
+    font-size: 0.8em;
+    padding: 10px;
+    margin: 5px auto;
+    width: auto;
+    max-width: 400px;
+}
+
+
+
+
+input, textarea{
+    border: 0;
+    outline: none;
+
+    width: 80%;
+    max-width: 400px;
+}
+
+.field{
+    border: solid 1px #ccc;
+    padding: 10px;
+
+    
+}
+
+.field:focus{
+    border-color: #18A383;
+}
+
+.center-content{
+    text-align: center;
+}
+
+.btn{
+	border-radius: 3px;
+	display: inline-block;
+	padding: 15px 5px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+}
+
+.btn-green{
+	color: white;
+    background-color: #3CC93F;
+    width: 30%;
+    max-width: 200px;
+}
+.btn-green:hover{
+	background-color: #37B839;	
+}
+.btn-green:active{
+	background-color: #29962A;
+}
+
+#rightSide p {
+    margin-bottom: 5px;
+}
+
+.terciario iframe {
+    width: 95%;
+}
+.secundario #titulo {
+    padding-left: 10px;
+}
+
+.secundario #titulo {
+    font-size: 25px;
+    font-weight: 700;
+
+}
+.secundario #direccion {
+    padding-left: 15px;
+}
+
+.secundario #direccion {
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.secundario #telefono {
+    padding-left: 15px;
+}
+
+.secundario #telefono {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+textarea {
+    margin-bottom: 20px;
+}
+
+/* Fin de contact form*/
+
+
+/* inicio de guias*/
+
+
+
+.cards h2 {
+    font-weight: 900;
+    font-size: 30px;
+    color: #4C4E96;
+}
+
+.cards section {
+    background-color:#B9B9CC;
+    border:1px solid #60629F;
+    text-align:center;
+    padding-bottom: 10px;
+}
+
+
+.cards div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:.25rem;
+    box-shadow: 0 0 20px black;
+    background-color: #DDDDDD;
+    padding: 1rem;    
+}
+
+
+.cards img {
+    width:200px;
+    height:200px;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 10px;
+}
+.cards h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.cards p {
+    font-size: 16px;
+    font-size: 400;
+}
+
+.cards email{
+    font-size: 18px;
+    font-weight: bold;
+    }
+
+/* fin de guias */
+
+/* Contact reservation Inicio */
+
+
+.reservation-form{
+    background-color: white;
+    border-radius: 3px;
+    color: #999;
+    font-size: 0.8em;
+    padding: 10px;
+    margin: 5px auto;
+    width: auto;
+    max-width: 400px;
+}
+
+
+
+
+.reservation-form input, textarea{
+    border: 0;
+    outline: none;
+
+    width: 80%;
+    max-width: 400px;
+}
+
+form .fieldR{
+    border: solid 1px #ccc;
+    padding: 5px;
+    margin-bottom: 5px;
+
+    
+}
+
+form .fieldR:focus{
+    border-color: #18A383;
+}
+
+.center-contentR{
+    text-align: center;
+}
+
+.btnR{
+	border-radius: 3px;
+	display: inline-block;
+	padding: 15px 5px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+}
+
+.btn-greenR{
+	color: white;
+    background-color: #3CC93F;
+    width: 30%;
+    max-width: 200px;
+    font-size: 30px;
+}
+.btn-greenR:hover{
+	background-color: #37B839;	
+}
+.btn-greenR:active{
+	background-color: #29962A;
+}
+
+.reservation-form textarea {
+    margin-bottom: 20px;
+}
+
+/* Fin de reservation form*/
+
+
+
+/* opcion reservar opcion Inicio */
+
+
+.reservar-opcion {
+    background-color: white;
+    border-radius: 3px;
+    color: #999;
+    font-size: 0.8em;
+    padding-top: 10px;
+          
+}
+
+.reservar-opcion label {
+    text-align: left;
+    font-size: 25px ;
+}
+
+.reservar-opcion input, textarea{
+    border: 0;
+    outline: none;
+    width: 80%;
+    max-width: 400px;
+}
+
+.reservar-opcion form #lower{
+    border: solid 1px #ccc;
+    padding: 10px;
+
+    
+}
+
+form .fieldR:focus{
+    border-color: #18A383;
+}
+
+.center-contentR{
+    text-align: center;
+}
+
+
+#lower {
+    margin-left: 8%;
+    width: 50px;
+    
+}
+
+#middle {
+    margin-left: 8%;
+    width: 50px;
+}
+
+#high {
+    margin-left: 8%;
+    width: 50px;
+}
+
+.reservation-form p {
+    font-size: 30px;
+}
+
+/* Fin de reservar opcion form*/
+
+
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+@media only screen and (min-width: 900px)
+{#footer .wrap > div{
+    width: 26%;
+    margin: 25px;
+    
+}
+
+#footer {       
+    height: 470px;
+    padding-bottom: 40px;
+}
+
+}
+
+

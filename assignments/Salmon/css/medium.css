@@ -1,0 +1,19 @@
+@media only screen and (min-width: 768px)
+{
+.title img {
+    width: 300px;
+}
+
+.container-form p{
+    font-size: 25px;
+}
+
+.btn-green {
+    font-size: 25px;
+} 
+
+sectio .formulario {
+    justify-self: center ;
+}
+
+}

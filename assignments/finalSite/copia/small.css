@@ -1,0 +1,162 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.grid-Salmon {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /*column-gap: 0px; /* separacion */
+    }  
+
+#headerSalmon img {
+    height: 100px;
+    padding: 5px;
+    margin: 0px;
+}
+
+
+#headerSalmon, #menuSalmon,#heroSalmon,#mainSalmon,#centroSalmon {
+    background-color: #00a896;
+    padding: 1px;
+    color: cornsilk;
+    text-align: center;
+    border: 2px solid black;
+ 
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
+/*Navegacion*/
+#menuSalmon {
+    height: 50px;
+}
+
+nav button {   /* convierte en boton un transparente y lo agranda 
+    para que pueda ser usado con el dedo */
+margin: .4rem;
+background-color: transparent;
+border: none;
+font-size: 1.6rem;
+color:white;
+}
+
+
+nav {
+background-color: black;
+font-family: 'Roboto', sans-serif;  
+text-align: center;
+}
+
+nav ul {   /* le saca los punto y el margen*/
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+
+nav ul li a {
+display: block; /* area para que sea clickeable*/
+padding: .8rem 20%; /*areas mas grandes para que el dedo */
+text-decoration: none;  /* le saca el subrayado */
+color: white;  /*las letras en negro*/
+border: 1px solid rgb(255, 255, 255);
+}
+
+nav ul li.active {
+background-color: rgba(255,255,255, .2); /*quede marcado en el menu*/
+}
+
+nav ul li a:hover {
+background-color:rgba(255,255,255, .3) /*cuando pasa el mouse*/
+}
+
+
+nav ul.hide {
+display: none;
+}
+
+/* final del nav */
+
+/* inicio del hero*/
+
+.slider{
+    width: 50%;
+    /*margin: auto;*/
+    overflow: hidden; /* lo que esta afuera desaparece*/
+    }
+
+.slider ul {
+    display: flex;
+    justify-content: space-around ;
+    align-items: center ;
+    align-content: center ;
+    padding: 0;
+    width: 400%; /*porque son 4 imagenes, si fueran 3 seria 300%*/
+    animation: cambio 20s infinite;
+}
+
+.slider li {
+    /*width: 100%;*/
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;   }
+    20% { margin-left: 0;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+}
+
+/* fin del hero */
+
+
+
+
+@media only screen and (min-width: 900px)
+{
+
+/* inicio del nav*/
+nav button {
+    display: none;  /*saco el boton de menu*/
+        }
+
+nav ul li {
+            float: left;
+            
+        }
+
+
+  
+
+nav ul li a {
+    border: none; /*desaparece el borde */
+    border-right: 1px solid rgba(0, 0, 0, 0.3); /*bordes a los costados*/
+    padding: .8rem 1rem; /* espacio alrededor del texto*/
+}
+
+nav ul.hide {
+    display: block;
+      /*fuerzo el display*/
+}
+/*fin del nav*/
+
+}

@@ -1,0 +1,59 @@
+    {
+        "riverguide": [
+          {
+            "name": "Michael Jordan",
+            "imageurl": "https://randomuser.me/api/portraits/men/71.jpg",
+            "certification": "Master Level",
+            "years": "9",
+            "email":"mjordan@example.com",
+            "biography": [
+                  "2018: master in fadfl dfsafdsa",
+                  "2015: master in asfdasfweqr"
+                ]                        
+          },
+          {
+            "name": "Kevin Garnett",
+            "imageurl": "https://randomuser.me/api/portraits/men/72.jpg",
+            "certification": "Expert level",
+            "years": "7",
+            "email":"keving@example.com",
+            "biography": [
+                  "2018: master in fadfl dfsafdsa",
+                  "2016: master in asfdasfweqr"
+                ]                        
+          },
+          {
+            "name": "LeBron James",
+            "imageurl": "https://randomuser.me/api/portraits/men/75.jpg",
+            "certification": "Expert Level",
+            "years": "6",
+            "email":"jameslb@example.com",
+            "biography": [
+                  "2020: master in fadfl dfsafdsa",
+                  "2015: master in asfdasfweqr"
+                ]                        
+          },
+          {
+            "name": "Tim Duncan",
+            "imageurl": "https://randomuser.me/api/portraits/men/76.jpg",
+            "certification": "Master Level",
+            "years": "8",
+            "email":"tim.duncan@example.com",
+            "biography": [
+                  "2019: master in fadfl dfsafdsa",
+                  "2017: master in asfdasfweqr"
+                ]                        
+          },
+          {
+            "name": "Kobe Bryant",
+            "imageurl": "https://randomuser.me/api/portraits/men/79.jpg",
+            "certification": "Intermediate Level",
+            "years": "4",
+            "email":"kobe.b@example.com",
+            "biography": [
+                  "2016: master in fadfl dfsafdsa",
+                  "2014: master in asfdasfweqr"
+                ]                        
+          }          
+        ]
+      }

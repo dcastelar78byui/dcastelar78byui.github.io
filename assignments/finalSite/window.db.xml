@@ -1,0 +1,42 @@
+<window>
+  <window_id>190fa687-4d9a-4041-b73b-60792b200a14</window_id>
+  <type>Aluminum Frame, Glass Pane</type>
+  <description>Glass Single Pane, exterior</description>
+  <thickness_inches>0.25</thickness_inches>
+  <rfactor>0.91</rfactor>
+</window>
+<window>
+  <window_id>5b0ca1d5-e5cc-4534-82b3-3bad2cfbba1c</window_id>
+  <type>Aluminum Frame, Glass Pane</type>
+  <description>Glass Double Pane with 1/4" air space</description>
+  <thickness_inches>0.75</thickness_inches>
+  <rfactor>1.69</rfactor>
+</window>
+<window>
+  <window_id>7e44994f-76cf-4ad4-bc3c-ad58a5e11b9c</window_id>
+  <type>Aluminum Frame, Glass Pane</type>
+  <description>Double Pane with 1/2" air space</description>
+  <thickness_inches>1.00</thickness_inches>
+  <rfactor>2.04</rfactor>
+</window>
+<window>
+  <window_id>2a321487-e745-4a14-8feb-a8e9e902b439</window_id>
+  <type>Aluminum Frame, Glass Pane</type>
+  <description>Double Pane with 3/4" air space</description>
+  <thickness_inches>1.25</thickness_inches>
+  <rfactor>2.38</rfactor>
+</window>
+<window>
+  <window_id>5b66d2e4-1d3c-4c8c-9b35-4682a0fe0394</window_id>
+  <type>Aluminum Frame, Glass Pane</type>
+  <description>Triple Pane with 1/4" air spaces</description>
+  <thickness_inches>1.25</thickness_inches>
+  <rfactor>2.56</rfactor>
+</window>
+<window>
+  <window_id>6ae036b6-b9ce-4e1c-ad9b-94782db18ed5</window_id>
+  <type>Aluminum Frame, Glass Pane</type>
+  <description>Triple Pane with 1/2" air spaces</description>
+  <thickness_inches>1.75</thickness_inches>
+  <rfactor>3.23</rfactor>
+</window>

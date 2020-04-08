@@ -1,0 +1,21 @@
+<wall>
+  <wall_id>4b13f529-a391-4be7-9ec8-95386f740d0a</wall_id>
+  <type>Wood</type>
+  <description>Wall 2x4 with 1/2" gypsum board on each side</description>
+  <thickness_inches>4.5</thickness_inches>
+  <rfactor>11.8</rfactor>
+</wall>
+<wall>
+  <wall_id>fba6dd5e-559c-4ce5-a858-3d8fb44aee1b</wall_id>
+  <type>Wood</type>
+  <description>Wall 2x6</description>
+  <thickness_inches>6.5</thickness_inches>
+  <rfactor>15.8</rfactor>
+</wall>
+<wall>
+  <wall_id>2b0ce7cc-3ebf-4514-a4d1-81e1caf2dbfc</wall_id>
+  <type>Adobe</type>
+  <description>Adobe Wall 10"</description>
+  <thickness_inches>10</thickness_inches>
+  <rfactor>10</rfactor>
+</wall>
