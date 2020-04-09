@@ -115,7 +115,7 @@
 }
 
 .portafolio-item img{
-    width: 100%;
+    width: 80%;
     margin: 10px 10%;
         
 }
@@ -153,13 +153,13 @@
 
 
 .portafolio-txt {
-    width: 45%;
+    width: 550px;
     margin-left: 18%;
-    height: 250px;
+    height: 350px;
     transform: translateY(98%);  /* se mueve de su lugar original*/
     margin-bottom: 0px;
+    }
 
-}
 /*
 .portafolio-item img {
     margin-bottom: 0px;
@@ -168,10 +168,10 @@
 
 
 /* inicio de Index */
-
+/*
 .slider img {
     width: 800px;
-}
+}*/
      
 
 /*fin de index/
