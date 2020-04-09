@@ -1,5 +1,7 @@
 @media only screen and (min-width: 900px)
-{
+{  body {
+    text-align: center;
+}
 
     .title img {
         width: 350px;
@@ -137,8 +139,8 @@
 }
 
 .reservation-form  {
-    margin-left: 10px;
-   
+    margin-left: auto;
+
 }
 
 .center-contentR .btn-greenR {
