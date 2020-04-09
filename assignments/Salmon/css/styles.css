@@ -450,7 +450,7 @@ input, textarea{
 }
 
 .btn-green{
-	color: white;
+	color: black;
     background-color: #3CC93F;
     width: 30%;
     max-width: 200px;
@@ -614,7 +614,7 @@ form .fieldR:focus{
 }
 
 .btn-greenR{
-	color: white;
+	color: black;
     background-color: #3CC93F;
     width: 30%;
     max-width: 200px;
