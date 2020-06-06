@@ -1,0 +1,148 @@
+
+
+//Color
+$principal-color:#FAEBD7;
+$secondary-color: #DEB887;
+$third-color: #6495ED;
+
+$background-color: $principal-color;
+$sidebar-text-color: $principal-color;
+$navigation-normal-color: $principal-color;
+$naviagtion-visited-color: $principal-color;
+$navigation-active-color: $secondary-color;
+$navigation-hover-color: white;
+$pages-visited-color:$secondary-color;
+$pages-normal-color: $secondary-color;
+$article-title-color: black;
+$article-active-color: $secondary-color;
+$article-hover-color: $third-color;
+
+//fonts
+$body-font: Arial, Helvetica, sans-serif;
+$header-font:'Lora', serif;
+
+//Sizes
+$full-size: 100%;
+$medium-size: 80%;
+$small-size: 50%;
+
+//Screen Size
+$screen-big: 1024px;
+$screen-tablet: 768px;
+$screen-celular: 360px;
+
+@mixin font-option ($font-family, $font-color) {
+    font-family: $font-family;
+    color: $font-color;    
+}
+
+@mixin a-option ($a-color, $a-decoration) {
+    color: $a-color;
+    text-decoration: $a-decoration;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body a {
+    @include font-option($body-font, $third-color);
+    
+}
+
+header h1 a{
+    @include font-option($header-font, $third-color);
+    text-decoration: none;}
+
+main {
+    background: $background-color;
+}
+
+figure img {
+    width: $full-size;
+    max-width: 500px;
+}
+
+/* 5 */
+
+nav {
+    background: $navigation-normal-color;
+    width: $full-size;
+    border: black 1px solid;
+    text-align: center; 
+    
+
+    ul {   
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+            
+    
+        li{ 
+            a {
+                display: block; 
+                padding: .8rem 20%; 
+                text-decoration: none;  
+                color:black;  
+            }
+              
+    
+        &.active {
+                    background-color:$navigation-active-color; 
+                    }
+    
+        & a:hover {
+                    background-color: $navigation-hover-color; /*cuando pasa el mouse*/
+                    }
+        }            
+  }
+}
+  /*Article title links should behave thus: normal and visited: black and no underline , 
+active: #DEB887, hover: #6495ED and underlined
+  */    
+
+    h2 a {
+        @include a-option($article-title-color, none);
+            
+    
+      &:active {
+                color: $article-active-color ;
+                }
+    
+      &:hover {
+                color: $article-hover-color;
+                text-decoration: underline;
+            }
+    }
+    /* Other page links should behave thus: normal and visited: #6495ED and no underline , 
+active: #DEB887, hover: underlined  */
+
+    p a {
+        @include a-option($third-color, none);
+        
+    
+
+        &:active {
+                   color: $article-active-color ;
+                  }
+    
+        &:hover {
+                    text-decoration: underline;
+                }
+            }
+    @media only screen and (min-width: $screen-tablet)
+    {
+        nav ul {
+                display: flex ;
+                flex-direction: row ;
+                flex-wrap: wrap ;
+                justify-content: space-around ;
+                align-items: center ;
+                align-content: center ;
+
+              
+            & li a {
+                    padding-left: 30px;
+                    padding-right: 30px;
+
+                    }
+    }}

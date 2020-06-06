@@ -1,0 +1,108 @@
+body {
+    background-color: brown;
+}
+
+.contenedor {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.cajas {
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid yellow;  
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+
+.cajas::before {
+    background: yellow;
+    content: "";
+    /*width: 100%;
+    height: 100%;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+    color: black;
+}
+
+.roja::before{
+    width: 0;
+    height: 100%;
+}
+
+.roja:hover::before {
+    width: 100%;
+        
+}
+
+.verde::before{
+    width: 100%;
+    height: 0%;
+}
+
+.verde:hover::before {
+    height: 100%;
+        }
+
+.amarilla::before{
+    width: 100%;
+    height: 0;
+    transform: translate(-50%,-50%) rotate(45deg);
+    
+}
+
+.amarilla:hover::before {
+    height: 300%;
+   
+}
+.amarilla:hover {
+    color: black;
+}
+
+
+/*
+.roja {
+   background: red;
+    order: 1;
+   
+    align-self: flex-start;
+}
+
+.azul {
+    background: blue;
+    /*flex-grow: 1;
+    align-self: flex-end;
+    order: 0;
+}
+
+.amarilla {
+    background: yellow;
+    order: -2;
+    /*flex-grow: 3;
+    
+}
+    .verde {
+    background: gray;
+    /*flex-grow: 10;
+    align-self: stretch;
+    order: -1;
+    z-index: initial;
+}
+
+.
+
+
